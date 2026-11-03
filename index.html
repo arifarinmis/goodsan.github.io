@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İNOMAX Ar-Ge Danışmanlık ve Mühendislik Hizmetleri A.Ş.</title>
+    <meta name="description" content="Optimum fayda, maksimum inovasyon, güvenilir danışmanlık. TÜBİTAK, KOSGEB, Kalkınma Ajansı ve Yeşil Dönüşüm Hibe/Teşvik Danışmanlığı.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    },
+                    colors: {
+                        inomax: {
+                            dark: '#0A1628',
+                            navy: '#112240',
+                            blue: '#1D4ED8',
+                            accent: '#059669',
+                            light: '#F8FAFC'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-blue-600 selection:text-white min-h-screen flex flex-col">
+
+    <!-- ÜST BİLGİ ÇUBUĞU (TOP BAR) -->
+    <div class="bg-inomax-dark text-slate-300 text-xs py-2.5 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center space-x-6">
+                <a href="mailto:info@inomaxdanismanlik.com" class="flex items-center hover:text-white transition">
+                    <svg class="w-4 h-4 mr-1.5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    <span>info@inomaxdanismanlik.com</span>
+                </a>
+                <a href="tel:+905546597684" class="flex items-center hover:text-white transition tabular-nums">
+                    <svg class="w-4 h-4 mr-1.5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                    <span>0554 659 76 84</span>
+                </a>
+            </div>
+            <div class="hidden md:flex items-center space-x-2 text-slate-400">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                <span>Beştepe Mah. Nergiz Sok. No:7/2 İç Kapı:32 Söğütözü, Yenimahalle / ANKARA</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVİGASYON BAR -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-8">
+            <!-- Özel Vektörel İNOMAX Kurumsal Logo -->
+            <a href="#anasayfa" class="inline-flex items-center gap-3 select-none group shrink-0">
+                <div class="relative w-11 h-11 rounded-xl bg-gradient-to-br from-[#0A1628] via-[#1D4ED8] to-[#059669] p-[1.5px] shadow-md transition-transform duration-200 group-hover:scale-105 shrink-0">
+                    <div class="w-full h-full rounded-[10.5px] bg-[#0A1628] flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute -top-3 -right-3 w-7 h-7 rounded-full bg-emerald-500/30 blur-md"></div>
+                        <div class="absolute -bottom-3 -left-3 w-7 h-7 rounded-full bg-blue-500/30 blur-md"></div>
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 relative z-10">
+                            <defs>
+                                <linearGradient id="inomaxBlueGrad" x1="6" y1="8" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#60A5FA" />
+                                    <stop offset="100%" stop-color="#2563EB" />
+                                </linearGradient>
+                                <linearGradient id="inomaxGreenGrad" x1="14" y1="38" x2="42" y2="10" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#10B981" />
+                                    <stop offset="100%" stop-color="#34D399" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M24 5L39.5 14V34L24 43L8.5 34V14L24 5Z" stroke="url(#inomaxBlueGrad)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" />
+                            <rect x="13.5" y="18" width="4.5" height="15" rx="2.25" fill="url(#inomaxBlueGrad)" />
+                            <circle cx="15.75" cy="13" r="2.6" fill="#34D399" />
+                            <path d="M21.5 33V18.5L32.5 33V15.5" stroke="url(#inomaxGreenGrad)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M28.5 18L32.5 14L36.5 18" stroke="#34D399" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class="flex items-baseline tracking-tight whitespace-nowrap">
+                        <span class="text-2xl font-extrabold tracking-tight text-inomax-dark">İNO</span>
+                        <span class="text-2xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500">MAX</span>
+                    </div>
+                    <span class="block text-[10px] font-semibold tracking-wider text-emerald-700 -mt-1 whitespace-nowrap">Ar-Ge & Mühendislik A.Ş.</span>
+                </div>
+            </a>
+
+            <!-- Masaüstü Menü -->
+            <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-700">
+                <a href="#anasayfa" class="hover:text-blue-700 transition whitespace-nowrap">Anasayfa</a>
+                <a href="#hakkimizda" class="hover:text-blue-700 transition whitespace-nowrap">Hakkımızda</a>
+
+                <!-- Açılır Hizmetlerimiz Mega Menüsü -->
+                <div class="relative" id="services-dropdown-wrapper">
+                    <button type="button" id="services-dropdown-btn" class="inline-flex items-center gap-1.5 py-2 hover:text-blue-700 transition whitespace-nowrap cursor-pointer">
+                        <span>Hizmetlerimiz</span>
+                        <svg id="services-dropdown-icon" class="w-4 h-4 text-slate-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+
+                    <!-- Mega Menü Paneli -->
+                    <div id="services-dropdown-panel" class="hidden absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[760px] lg:w-[860px] z-50">
+                        <div class="bg-white rounded-2xl border border-slate-200 shadow-2xl overflow-hidden">
+                            <div class="bg-slate-50 px-6 py-3.5 border-b border-slate-200 flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs font-bold text-inomax-dark">İNOMAX Hibe, Teşvik ve Ar-Ge Danışmanlık Hizmetleri</span>
+                                    <span class="text-xs text-slate-500 ml-2">· İlgilendiğiniz programı seçerek detaylara ulaşın</span>
+                                </div>
+                                <button type="button" onclick="selectCategoryFromMenu('all')" class="text-xs font-bold text-blue-700 hover:text-blue-800 flex items-center gap-1 cursor-pointer">
+                                    Tüm Hizmetleri Gör →
+                                </button>
+                            </div>
+
+                            <div class="grid grid-cols-3 divide-x divide-slate-100 p-5 gap-4">
+                                <!-- Sütun 1: TÜBİTAK -->
+                                <div class="px-2">
+                                    <button type="button" onclick="selectCategoryFromMenu('tubitak')" class="w-full text-left mb-3 pb-2 border-b border-slate-100 group cursor-pointer">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-xs font-extrabold text-inomax-dark group-hover:text-blue-700">TÜBİTAK - TEYDEB Destekleri</span>
+                                            <span class="text-slate-400 group-hover:text-blue-700">→</span>
+                                        </div>
+                                        <p class="text-[11px] font-normal text-slate-500 mt-0.5">Ar-Ge, İnovasyon ve Yeşil Dönüşüm Hibeleri</p>
+                                    </button>
+                                    <ul class="space-y-1.5">
+                                        <li>
+                                            <button type="button" onclick="selectProgramFromMenu('tubitak-1501')" class="w-full text-left p-2 rounded-xl hover:bg-slate-50 transition">
+                                                <div class="text-xs font-bold text-slate-800">TÜBİTAK 1501 <span class="text-[11px] font-normal text-slate-500">· %75 Hibe</span></div>
+                                                <p class="text-xs text-slate-600">1501 Sanayi Ar-Ge Destekleri</p>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" onclick="selectProgramFromMenu('tubitak-1507')" class="w-full text-left p-2 rounded-xl hover:bg-slate-50 transition">
+                                                <div class="text-xs font-bold text-slate-800">TÜBİTAK 1507 <span class="text-[11px] font-normal text-slate-500">· %75 Hibe</span></div>
+                                                <p class="text-xs text-slate-600">1507 KOBİ Ar-Ge Başlangıç</p>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" onclick="selectProgramFromMenu('tubitak-1509')" class="w-full text-left p-2 rounded-xl hover:bg-slate-50 transition">
+                                                <div class="text-xs font-bold text-slate-800">TÜBİTAK 1509 <span class="text-[11px] font-normal text-slate-500">· %60-%75 Hibe</span></div>
+                                                <p class="text-xs text-slate-600">1509 Uluslararası Ar-Ge (EUREKA)</p>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" onclick="selectProgramFromMenu('tubitak-1832')" class="w-full text-left p-2 rounded-xl hover:bg-slate-50 transition">
+                                                <div class="text-xs font-bold text-emerald-700">TÜBİTAK 1832 <span class="text-[11px] font-normal text-slate-500">· %70-%85 Destek</span></div>
+                                                <p class="text-xs text-slate-600">1832 Sanayide Yeşil Dönüşüm</p>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" onclick="selectProgramFromMenu('tubitak-1707')" class="w-full text-left p-2 rounded-xl hover:bg-slate-50 transition">
+                                                <div class="text-xs font-bold text-slate-800">TÜBİTAK 1707 & 1602</div>
+                                                <p class="text-xs text-slate-600">Siparişe Dayalı Ar-Ge & Patent</p>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Sütun 2: KOSGEB -->
+                                <div class="px-3">
+                                    <button type="button" onclick="selectCategoryFromMenu('kosgeb')" class="w-full text-left mb-3 pb-2 border-b border-slate-100 group cursor-pointer">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-xs font-extrabold text-inomax-dark group-hover:text-blue-700">KOSGEB Destek Programları</span>
+                                            <span class="text-slate-400 group-hover:text-blue-700">→</span>
+                                        </div>
+                                        <p class="text-[11px] font-normal text-slate-500 mt-0.5">KOBİ Gelişim, Dijitalleşme ve Yeşil Sanayi</p>
+                                    </button>
+                                    <ul class="space-y-1.5">
+                                        <li>
+                                            <button type="button" onclick="selectProgramFromMenu('kosgeb-destekleri')" class="w-full text-left p-2 rounded-xl hover:bg-slate-50 transition">
+                                                <div class="text-xs font-bold text-slate-800">KOSGEB KOBİGEL & Yeşil Sanayi</div>
+                                                <p class="text-xs text-slate-600 mt-0.5">KOBİ Gelişim, Dijitalleşme, Çatı GES ve Temiz Üretim Yatırımları</p>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Sütun 3: Kalkınma Ajansı & Bakanlık -->
+                                <div class="px-3">
+                                    <button type="button" onclick="selectCategoryFromMenu('ajans')" class="w-full text-left mb-3 pb-2 border-b border-slate-100 group cursor-pointer">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-xs font-extrabold text-inomax-dark group-hover:text-blue-700">Kalkınma Ajansı & Bakanlık</span>
+                                            <span class="text-slate-400 group-hover:text-blue-700">→</span>
+                                        </div>
+                                        <p class="text-[11px] font-normal text-slate-500 mt-0.5">Yatırım Teşvik, Ajans Hibeleri ve Ar-Ge Merkezi</p>
+                                    </button>
+                                    <ul class="space-y-1.5">
+                                        <li>
+                                            <button type="button" onclick="selectProgramFromMenu('kalkinma-ajansi')" class="w-full text-left p-2 rounded-xl hover:bg-slate-50 transition">
+                                                <div class="text-xs font-bold text-slate-800">KALKINMA AJANSLARI</div>
+                                                <p class="text-xs text-slate-600">Bölgesel Hibe ve Mali Destekler</p>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" onclick="selectProgramFromMenu('bakanlik-yatirim')" class="w-full text-left p-2 rounded-xl hover:bg-slate-50 transition">
+                                                <div class="text-xs font-bold text-slate-800">BAKANLIK DESTEKLERİ</div>
+                                                <p class="text-xs text-slate-600">Yatırım Teşvik Belgesi & İhracat</p>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" onclick="selectProgramFromMenu('arge-merkezi')" class="w-full text-left p-2 rounded-xl hover:bg-slate-50 transition">
+                                                <div class="text-xs font-bold text-slate-800">AR-GE MERKEZİ & EĞİTİM</div>
+                                                <p class="text-xs text-slate-600">5746 Ar-Ge / Tasarım Merkezi Kurulumu</p>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Alt Çağrı Bandı -->
+                            <div class="bg-gradient-to-r from-inomax-dark via-inomax-navy to-emerald-950 px-6 py-3.5 text-white flex items-center justify-between gap-4">
+                                <div class="flex items-center gap-3">
+                                    <span class="px-2.5 py-1 rounded-md bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs font-bold">1832 Yeşil Dönüşüm</span>
+                                    <p class="text-xs text-slate-200">Türkiye Yeşil Sanayi Projesi kapsamında <strong>450 Milyon $</strong> bütçeli çağrı başvuruları devam ediyor.</p>
+                                </div>
+                                <a href="#degerlendirme" onclick="inquireProgram('1832 – Sanayide Yeşil Dönüşüm Çağrısı')" class="px-3.5 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs transition shrink-0">Hemen Başvur</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#yesil-donusum" class="text-emerald-700 hover:text-emerald-800 transition whitespace-nowrap">1832 Yeşil Dönüşüm</a>
+                <a href="#iletisim" class="hover:text-blue-700 transition whitespace-nowrap">İletişim</a>
+            </nav>
+
+            <!-- CTA -->
+            <div class="hidden md:block shrink-0">
+                <a href="#degerlendirme" class="inline-flex items-center px-5 py-2.5 rounded-lg bg-inomax-dark text-white text-sm font-semibold hover:bg-blue-800 transition shadow-sm whitespace-nowrap">
+                    <span>Ücretsiz Ön Analiz</span>
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO BÖLÜMÜ -->
+    <section id="anasayfa" class="relative bg-inomax-dark text-white overflow-hidden py-16 lg:py-24">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div class="absolute -top-32 -right-32 w-96 h-96 bg-blue-600/30 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-emerald-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-start">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 text-blue-300 text-xs font-semibold tracking-wide">
+                    <span>2012'den Bugüne Güvenilir Çözüm Ortağınız</span>
+                    <span>·</span>
+                    <span class="text-emerald-400">Ankara Söğütözü Merkezli</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                    Optimum Fayda, <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Maksimum İnovasyon.</span>
+                </h1>
+
+                <p class="text-lg text-slate-300 max-w-2xl leading-relaxed">
+                    İnomax Ar-Ge Danışmanlık ve Mühendislik Hizmetleri A.Ş. olarak; yenilikçi bakış açımızla TÜBİTAK, KOSGEB, Kalkınma Ajansları ve Bakanlık desteklerinde projelerinizi fikirden ticarileşmeye kadar uçtan uca yönetiyoruz.
+                </p>
+
+                <div class="flex flex-wrap gap-4 pt-1">
+                    <a href="#hizmetlerimiz" class="px-7 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-emerald-600 text-white font-bold text-sm hover:opacity-95 transition shadow-lg shadow-blue-900/40">
+                        Destek Programlarını İncele
+                    </a>
+                    <a href="#iletisim" class="px-7 py-4 rounded-xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold text-sm backdrop-blur-sm transition">
+                        Uzmanımızla Görüşün
+                    </a>
+                </div>
+
+                <!-- Hero Görsel Sahnesi -->
+                <div class="pt-2">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-700/70 bg-gradient-to-br from-[#0F223D] via-[#0B192E] to-[#082228] shadow-2xl">
+                        <svg viewBox="0 0 800 380" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-56 sm:h-64 object-cover">
+                            <defs>
+                                <linearGradient id="heroSky" x1="0" y1="0" x2="800" y2="380" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#0A1628" />
+                                    <stop offset="50%" stop-color="#112645" />
+                                    <stop offset="100%" stop-color="#06342E" />
+                                </linearGradient>
+                                <linearGradient id="glassTower" x1="0" y1="60" x2="0" y2="340" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.35" />
+                                    <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0.08" />
+                                </linearGradient>
+                                <linearGradient id="emeraldGlow" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#34D399" stop-opacity="0.5" />
+                                    <stop offset="100%" stop-color="#059669" stop-opacity="0.05" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="800" height="380" fill="url(#heroSky)" />
+                            <circle cx="640" cy="110" r="130" fill="url(#emeraldGlow)" />
+                            <circle cx="210" cy="180" r="140" fill="#2563EB" fill-opacity="0.18" />
+                            <g transform="translate(50, 75)">
+                                <path d="M40 245V65L165 25L290 65V245H40Z" fill="url(#glassTower)" stroke="#60A5FA" stroke-opacity="0.4" stroke-width="1.5" />
+                                <line x1="165" y1="25" x2="165" y2="245" stroke="#93C5FD" stroke-opacity="0.35" stroke-width="1.5" />
+                                <path d="M290 135L450 95L560 135V245H290V135Z" fill="#0F2942" fill-opacity="0.85" stroke="#34D399" stroke-opacity="0.45" stroke-width="1.5" />
+                                <polygon points="310,130 445,98 535,130 400,158" fill="#059669" fill-opacity="0.35" stroke="#34D399" stroke-width="1.2" />
+                                <g transform="translate(585, 35)">
+                                    <line x1="0" y1="60" x2="0" y2="210" stroke="#A7F3D0" stroke-width="3.5" />
+                                    <circle cx="0" cy="60" r="5" fill="#10B981" />
+                                    <path d="M0 60 L-2 -5 L4 58 Z" fill="#6EE7B7" />
+                                    <path d="M0 60 L56 92 L-3 63 Z" fill="#6EE7B7" />
+                                    <path d="M0 60 L-54 94 L3 63 Z" fill="#6EE7B7" />
+                                </g>
+                                <line x1="0" y1="245" x2="710" y2="245" stroke="#38BDF8" stroke-opacity="0.4" stroke-width="2" />
+                            </g>
+                            <g transform="translate(45, 28)">
+                                <rect width="235" height="64" rx="10" fill="#0A1628" fill-opacity="0.85" stroke="#3B82F6" stroke-opacity="0.5" />
+                                <circle cx="28" cy="32" r="14" fill="#1D4ED8" fill-opacity="0.3" stroke="#60A5FA" stroke-width="1.5" />
+                                <path d="M22 35L26 30L30 33L35 26" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <text x="52" y="28" fill="#E2E8F0" font-size="11" font-weight="700" font-family="Plus Jakarta Sans, sans-serif">TÜBİTAK & KOSGEB PROJE HAVUZU</text>
+                                <text x="52" y="45" fill="#34D399" font-size="12" font-weight="800" font-family="JetBrains Mono, monospace">Ar-Ge · İnovasyon · Yeşil Sanayi</text>
+                            </g>
+                            <g transform="translate(490, 32)">
+                                <rect width="265" height="68" rx="10" fill="#0A1628" fill-opacity="0.88" stroke="#10B981" stroke-opacity="0.5" />
+                                <text x="18" y="26" fill="#A7F3D0" font-size="11" font-weight="700" font-family="Plus Jakarta Sans, sans-serif">TÜRKİYE YEŞİL SANAYİ PROJESİ</text>
+                                <text x="18" y="48" fill="#FFFFFF" font-size="16" font-weight="800" font-family="JetBrains Mono, monospace">450.000.000 $ Finansman</text>
+                            </g>
+                        </svg>
+                        <div class="px-5 py-3.5 bg-slate-950/90 border-t border-slate-800 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-300">
+                            <span class="font-semibold text-white">Mühendislik Tabanlı Ar-Ge & Yatırım Süreç Yönetimi</span>
+                            <span class="text-emerald-400 font-mono">Fikirden Ticarileşmeye 360° Danışmanlık</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- İstatistik Barı -->
+                <div class="grid grid-cols-3 gap-6 pt-6 border-t border-slate-800/80 tabular-nums">
+                    <div>
+                        <div class="text-3xl font-extrabold text-white">14+ Yıl</div>
+                        <div class="text-xs text-slate-400 mt-1">Sektörel Deneyim (2012'den beri)</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-extrabold text-emerald-400">360°</div>
+                        <div class="text-xs text-slate-400 mt-1">Ar-Ge ve Mühendislik Süreç Yönetimi</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-extrabold text-blue-400">%100</div>
+                        <div class="text-xs text-slate-400 mt-1">Mevzuat ve Çağrı Uyumluluğu</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sağ Taraf Öne Çıkan Çağrı Kartı (1832 Yeşil Dönüşüm - Animasyonlu SVG Başlıklı) -->
+            <div class="lg:col-span-5 lg:sticky lg:top-28" id="yesil-donusum">
+                <div class="bg-slate-900/95 border border-emerald-500/40 rounded-2xl overflow-hidden shadow-2xl relative">
+                    <div class="relative h-44 bg-gradient-to-br from-emerald-950 via-teal-900 to-inomax-dark border-b border-emerald-500/30 overflow-hidden">
+                        <svg viewBox="0 0 500 180" fill="none" class="w-full h-full">
+                            <defs>
+                                <linearGradient id="greenCurveGrad" x1="45" y1="140" x2="455" y2="28" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#10B981" />
+                                    <stop offset="50%" stop-color="#34D399" />
+                                    <stop offset="100%" stop-color="#A7F3D0" />
+                                </linearGradient>
+                                <linearGradient id="greenAreaFill" x1="250" y1="28" x2="250" y2="165" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#10B981" stop-opacity="0.32" />
+                                    <stop offset="100%" stop-color="#10B981" stop-opacity="0.02" />
+                                </linearGradient>
+                                <path id="greenTrajectoryPath" d="M45 140 C120 135, 180 95, 255 85 C330 75, 385 40, 455 28" />
+                            </defs>
+
+                            <circle cx="410" cy="40" r="85" fill="#10B981" fill-opacity="0.2">
+                                <animate attributeName="r" values="75;95;75" dur="5s" repeatCount="indefinite" />
+                                <animate attributeName="fill-opacity" values="0.15;0.28;0.15" dur="5s" repeatCount="indefinite" />
+                            </circle>
+                            <circle cx="90" cy="140" r="90" fill="#3B82F6" fill-opacity="0.15">
+                                <animate attributeName="r" values="80;100;80" dur="6s" repeatCount="indefinite" />
+                                <animate attributeName="fill-opacity" values="0.1;0.22;0.1" dur="6s" repeatCount="indefinite" />
+                            </circle>
+
+                            <g stroke="#34D399" stroke-opacity="0.18" stroke-width="1">
+                                <line x1="0" y1="60" x2="500" y2="60" />
+                                <line x1="0" y1="120" x2="500" y2="120" />
+                                <line x1="125" y1="0" x2="125" y2="180" />
+                                <line x1="250" y1="0" x2="250" y2="180" />
+                                <line x1="375" y1="0" x2="375" y2="180" />
+                            </g>
+
+                            <line x1="0" y1="0" x2="0" y2="180" stroke="#6EE7B7" stroke-opacity="0.35" stroke-width="1.5">
+                                <animate attributeName="x1" values="0;500;0" dur="8s" repeatCount="indefinite" />
+                                <animate attributeName="x2" values="0;500;0" dur="8s" repeatCount="indefinite" />
+                            </line>
+
+                            <!-- Dönen Rüzgar Türbinleri -->
+                            <g transform="translate(88, 76)">
+                                <line x1="0" y1="0" x2="0" y2="85" stroke="#34D399" stroke-opacity="0.4" stroke-width="2.5" />
+                                <g>
+                                    <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="6s" repeatCount="indefinite" />
+                                    <path d="M0 0 L-2 -34 L3 -2 Z" fill="#6EE7B7" fill-opacity="0.55" />
+                                    <path d="M0 0 L30 15 L-2 2 Z" fill="#6EE7B7" fill-opacity="0.55" />
+                                    <path d="M0 0 L-28 18 L2 2 Z" fill="#6EE7B7" fill-opacity="0.55" />
+                                </g>
+                                <circle cx="0" cy="0" r="3.5" fill="#10B981" stroke="#A7F3D0" stroke-width="1" />
+                            </g>
+
+                            <g transform="translate(148, 92) scale(0.75)">
+                                <line x1="0" y1="0" x2="0" y2="90" stroke="#60A5FA" stroke-opacity="0.35" stroke-width="2.5" />
+                                <g>
+                                    <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4.5s" repeatCount="indefinite" />
+                                    <path d="M0 0 L-2 -32 L3 -2 Z" fill="#93C5FD" fill-opacity="0.5" />
+                                    <path d="M0 0 L28 14 L-2 2 Z" fill="#93C5FD" fill-opacity="0.5" />
+                                    <path d="M0 0 L-26 16 L2 2 Z" fill="#93C5FD" fill-opacity="0.5" />
+                                </g>
+                                <circle cx="0" cy="0" r="3" fill="#3B82F6" />
+                            </g>
+
+                            <polygon points="45,140 120,135 180,95 255,85 330,75 385,40 455,28 455,165 45,165" fill="url(#greenAreaFill)">
+                                <animate attributeName="opacity" values="0.65;1;0.65" dur="4s" repeatCount="indefinite" />
+                            </polygon>
+
+                            <use href="#greenTrajectoryPath" stroke="url(#greenCurveGrad)" stroke-width="3.5" stroke-linecap="round" />
+
+                            <use href="#greenTrajectoryPath" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="36 460">
+                                <animate attributeName="stroke-dashoffset" from="496" to="0" dur="3.2s" repeatCount="indefinite" />
+                            </use>
+
+                            <g>
+                                <circle r="7" fill="#34D399" fill-opacity="0.35">
+                                    <animate attributeName="r" values="5;10;5" dur="1.5s" repeatCount="indefinite" />
+                                </circle>
+                                <circle r="3.5" fill="#ECFDF5" />
+                                <animateMotion dur="3.2s" repeatCount="indefinite" rotate="auto">
+                                    <mpath href="#greenTrajectoryPath" />
+                                </animateMotion>
+                            </g>
+
+                            <g transform="translate(360, 48)">
+                                <g>
+                                    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="3.5s" repeatCount="indefinite" />
+                                    <rect x="0" y="0" width="118" height="54" rx="8" fill="#0A1628" fill-opacity="0.92" stroke="#34D399" stroke-opacity="0.65">
+                                        <animate attributeName="stroke-opacity" values="0.4;0.95;0.4" dur="2.5s" repeatCount="indefinite" />
+                                    </rect>
+                                    <circle cx="104" cy="14" r="3" fill="#34D399">
+                                        <animate attributeName="opacity" values="1;0.25;1" dur="1.4s" repeatCount="indefinite" />
+                                    </circle>
+                                    <text x="12" y="22" fill="#A7F3D0" font-size="10" font-weight="700" font-family="Plus Jakarta Sans, sans-serif">DÜNYA BANKASI FONU</text>
+                                    <text x="12" y="41" fill="#FFFFFF" font-size="14" font-weight="800" font-family="JetBrains Mono, monospace">450 Milyon $</text>
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="absolute top-4 left-6 right-6 flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-md bg-slate-950/80 border border-emerald-400/40 text-emerald-300 text-xs font-bold">TÜBİTAK 1832 · KOSGEB</span>
+                            <span class="bg-emerald-500 text-slate-950 text-xs font-extrabold px-3 py-1 rounded-md uppercase tracking-wider">Aktif Çağrı & Duyuru</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 sm:p-8">
+                        <h2 class="text-2xl font-bold text-white mb-3">1832 – Sanayide Yeşil Dönüşüm Çağrısı</h2>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-5">
+                            TÜBİTAK ve KOSGEB tarafından yürütülen <strong class="text-white">Türkiye Yeşil Sanayi Projesi</strong> kapsamında sanayi kuruluşlarının yeşil dönüşüm ve Ar-Ge projelerine toplam <strong class="text-emerald-400">450 Milyon Dolarlık</strong> finansman tahsis edilmiştir.
+                        </p>
+                        <ul class="space-y-3 text-xs text-slate-200 mb-6">
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                                TÜBİTAK-TEYDEB Ar-Ge ve Yenilik Destekleri (%70 - %85 Destek Oranı)
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                                Karbon ayak izi azaltımı, enerji verimliliği ve döngüsel ekonomi çalışmaları
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                                Sermaye şirketleri ve KOBİ'ler için yüksek hibe ve faizsiz geri ödemeli destek
+                            </li>
+                        </ul>
+                        <a href="#degerlendirme" onclick="inquireProgram('1832 – Sanayide Yeşil Dönüşüm Çağrısı')" class="block w-full text-center py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm transition">
+                            Yeşil Dönüşüm Başvurusu İçin Bilgi Alın
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HAKKIMIZDA (BİZ KİMİZ / VİZYON / MİSYON) -->
+    <section id="hakkimizda" class="py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-blue-700">Kurumsal Kimliğimiz</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-inomax-dark mt-2">Her Sektör İçin Kalıcı ve Yenilikçi Çözümler</h2>
+                <p class="text-slate-600 mt-4 leading-relaxed">
+                    İnomax Danışmanlık olarak, yenilikçi bakış açımızla maksimum inovasyon anlayışı çerçevesinde her sektör için kalıcı çözümler sunmaya ve müşterilerimizin ulusal ve uluslararası destek mekanizmalarından en etkin şekilde faydalanmasına odaklanıyoruz.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 01. Biz Kimiz -->
+                <div class="p-7 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-lg transition flex flex-col">
+                    <div class="h-44 w-full rounded-xl overflow-hidden mb-6 bg-slate-900 relative border border-slate-200">
+                        <svg viewBox="0 0 400 180" fill="none" class="w-full h-full">
+                            <rect width="400" height="180" fill="#0F172A" />
+                            <path d="M65 155V45L135 22L205 45V155H65Z" fill="#1E3A8A" fill-opacity="0.55" stroke="#60A5FA" stroke-width="1.5" />
+                            <path d="M205 155V70L285 48L335 70V155H205Z" fill="#0F2942" stroke="#38BDF8" stroke-width="1.5" />
+                            <rect x="85" y="60" width="100" height="10" rx="2" fill="#93C5FD" fill-opacity="0.3" />
+                            <rect x="85" y="84" width="100" height="10" rx="2" fill="#93C5FD" fill-opacity="0.3" />
+                            <rect x="85" y="108" width="100" height="10" rx="2" fill="#93C5FD" fill-opacity="0.3" />
+                            <rect x="225" y="85" width="90" height="10" rx="2" fill="#34D399" fill-opacity="0.25" />
+                            <rect x="225" y="109" width="90" height="10" rx="2" fill="#34D399" fill-opacity="0.25" />
+                        </svg>
+                        <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-semibold text-white bg-slate-900/80 px-3 py-1.5 rounded-lg border border-white/10">
+                            <span>Ankara Söğütözü Merkez Ofis</span>
+                            <span class="text-blue-300 font-mono">Kuruluş: 2012</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2.5 mb-3">
+                        <span class="text-xs font-extrabold font-mono text-blue-700">01.</span>
+                        <h3 class="text-xl font-bold text-inomax-dark">Biz Kimiz?</h3>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Ankara Söğütözü merkezli mühendislik ve Ar-Ge danışmanlık ekibimizle; sanayi kuruluşlarının, teknoloji girişimlerinin ve KOBİ'lerin Ar-Ge, inovasyon, yatırım ve kurumsallaşma süreçlerinde uçtan uca danışmanlık ve eğitim hizmetleri sunan akredite bir çözüm ortağıyız.
+                    </p>
+                </div>
+
+                <!-- 02. Misyonumuz -->
+                <div class="p-7 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-lg transition flex flex-col">
+                    <div class="h-44 w-full rounded-xl overflow-hidden mb-6 bg-[#062822] relative border border-slate-200">
+                        <svg viewBox="0 0 400 180" fill="none" class="w-full h-full">
+                            <rect width="400" height="180" fill="#062822" />
+                            <path d="M40 135 C110 130, 140 65, 210 75 C270 85, 300 35, 360 30" stroke="#34D399" stroke-width="3" fill="none" />
+                            <path d="M40 135 C110 130, 140 65, 210 75 C270 85, 300 35, 360 30 L360 155 L40 155 Z" fill="#10B981" fill-opacity="0.15" />
+                            <circle cx="75" cy="120" r="7" fill="#059669" stroke="#A7F3D0" stroke-width="2.5" />
+                            <circle cx="165" cy="78" r="7" fill="#059669" stroke="#A7F3D0" stroke-width="2.5" />
+                            <circle cx="255" cy="65" r="7" fill="#059669" stroke="#A7F3D0" stroke-width="2.5" />
+                            <circle cx="345" cy="34" r="7" fill="#059669" stroke="#A7F3D0" stroke-width="2.5" />
+                        </svg>
+                        <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-semibold text-white bg-slate-900/80 px-3 py-1.5 rounded-lg border border-white/10">
+                            <span>Stratejik Hibe & Fon Eşleştirme</span>
+                            <span class="text-emerald-300 font-mono">Optimum Fayda</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2.5 mb-3">
+                        <span class="text-xs font-extrabold font-mono text-emerald-700">02.</span>
+                        <h3 class="text-xl font-bold text-inomax-dark">Misyonumuz</h3>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        İş ortaklarımızın teknik ve finansal kapasitelerini doğru analiz ederek; TÜBİTAK, KOSGEB, Kalkınma Ajansları ve Bakanlık fonlarını şirketlerin stratejik büyüme hedefleriyle eşleştirmek ve proje yazımından sonuçlandırma aşamasına kadar maksimum fayda sağlamaktır.
+                    </p>
+                </div>
+
+                <!-- 03. Vizyonumuz -->
+                <div class="p-7 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-lg transition flex flex-col">
+                    <div class="h-44 w-full rounded-xl overflow-hidden mb-6 bg-[#0B1536] relative border border-slate-200">
+                        <svg viewBox="0 0 400 180" fill="none" class="w-full h-full">
+                            <rect width="400" height="180" fill="#0B1536" />
+                            <circle cx="200" cy="90" r="64" stroke="#60A5FA" stroke-opacity="0.35" stroke-width="1.5" />
+                            <ellipse cx="200" cy="90" rx="64" ry="26" stroke="#38BDF8" stroke-opacity="0.4" stroke-width="1.5" />
+                            <ellipse cx="200" cy="90" rx="28" ry="64" stroke="#34D399" stroke-opacity="0.4" stroke-width="1.5" />
+                            <circle cx="170" cy="70" r="5" fill="#34D399" />
+                            <circle cx="235" cy="65" r="5" fill="#60A5FA" />
+                            <circle cx="215" cy="112" r="5" fill="#34D399" />
+                        </svg>
+                        <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-semibold text-white bg-slate-900/80 px-3 py-1.5 rounded-lg border border-white/10">
+                            <span>Yüksek Teknoloji & Yeşil Dönüşüm</span>
+                            <span class="text-indigo-300 font-mono">Ulusal & Uluslararası</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2.5 mb-3">
+                        <span class="text-xs font-extrabold font-mono text-indigo-700">03.</span>
+                        <h3 class="text-xl font-bold text-inomax-dark">Vizyonumuz</h3>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Türkiye'nin katma değerli üretim, yeşil dönüşüm ve yüksek teknoloji ihracatı hedeflerine öncülük eden; mühendislik tabanlı proje yönetim metodolojisiyle ulusal ve uluslararası düzeyde referans gösterilen lider danışmanlık kuruluşu olmaktır.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HİZMETLERİMİZ VE DESTEK PROGRAMLARI -->
+    <section id="hizmetlerimiz" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-emerald-600">Uzmanlık Alanlarımız</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-inomax-dark mt-2">Hibe, Teşvik ve Ar-Ge Destekleri</h2>
+                </div>
+                <div class="flex flex-wrap gap-2" id="filter-buttons">
+                    <button onclick="filterPrograms('all', this)" data-filter="all" class="filter-btn px-4 py-2.5 rounded-lg text-xs font-bold bg-inomax-dark text-white transition cursor-pointer">Tümü</button>
+                    <button onclick="filterPrograms('tubitak', this)" data-filter="tubitak" class="filter-btn px-4 py-2.5 rounded-lg text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 transition cursor-pointer">TÜBİTAK - TEYDEB</button>
+                    <button onclick="filterPrograms('kosgeb', this)" data-filter="kosgeb" class="filter-btn px-4 py-2.5 rounded-lg text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 transition cursor-pointer">KOSGEB</button>
+                    <button onclick="filterPrograms('ajans', this)" data-filter="ajans" class="filter-btn px-4 py-2.5 rounded-lg text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 transition cursor-pointer">Kalkınma Ajansı & Bakanlık</button>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="program-grid">
+                <!-- 1501 -->
+                <div id="card-tubitak-1501" class="program-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col" data-category="tubitak">
+                    <div class="h-32 bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 relative p-4 flex items-start justify-between">
+                        <span class="px-3 py-1 rounded-md bg-slate-950/80 text-white text-xs font-bold border border-white/15">TÜBİTAK 1501</span>
+                        <span class="text-xs font-mono text-blue-300">%75 Hibe</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-bold text-inomax-dark mb-2">Sanayi Ar-Ge Projeleri Destekleme Programı</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-1">KOBİ ölçeğindeki kuruluşların yeni bir ürün üretilmesi, mevcut ürünün geliştirilmesi veya teknolojik süreç yeniliği içeren Ar-Ge projelerinin hibe ile desteklenmesi.</p>
+                        <a href="#degerlendirme" onclick="inquireProgram('TÜBİTAK 1501 / 1507 Sanayi ve KOBİ Ar-Ge Destekleri')" class="text-xs font-bold text-blue-700 hover:underline">Proje Uygunluğunu Sorgula →</a>
+                    </div>
+                </div>
+
+                <!-- 1507 -->
+                <div id="card-tubitak-1507" class="program-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col" data-category="tubitak">
+                    <div class="h-32 bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 relative p-4 flex items-start justify-between">
+                        <span class="px-3 py-1 rounded-md bg-slate-950/80 text-white text-xs font-bold border border-white/15">TÜBİTAK 1507</span>
+                        <span class="text-xs font-mono text-blue-300">%75 Hibe</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-bold text-inomax-dark mb-2">KOBİ Ar-Ge Başlangıç Destek Programı</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-1">KOBİ'lerin Ar-Ge kültürünü kazanması ve nitelikli ilk Ar-Ge projelerini hayata geçirerek rekabet güçlerini artırmasına yönelik hızlı hibe desteği.</p>
+                        <a href="#degerlendirme" onclick="inquireProgram('TÜBİTAK 1501 / 1507 Sanayi ve KOBİ Ar-Ge Destekleri')" class="text-xs font-bold text-blue-700 hover:underline">Proje Uygunluğunu Sorgula →</a>
+                    </div>
+                </div>
+
+                <!-- 1509 -->
+                <div id="card-tubitak-1509" class="program-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col" data-category="tubitak">
+                    <div class="h-32 bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 relative p-4 flex items-start justify-between">
+                        <span class="px-3 py-1 rounded-md bg-slate-950/80 text-white text-xs font-bold border border-white/15">TÜBİTAK 1509</span>
+                        <span class="text-xs font-mono text-blue-300">Uluslararası Ar-Ge</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-bold text-inomax-dark mb-2">Uluslararası Sanayi Ar-Ge Projeleri</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-1">EUREKA, EUROSTARS ve ikili işbirliği çağrıları kapsamında uluslararası ortaklı yürütülen yüksek bütçeli Ar-Ge projelerinin ölçek sınırı olmaksızın desteklenmesi.</p>
+                        <a href="#degerlendirme" onclick="inquireProgram('TÜBİTAK 1509 Uluslararası Ar-Ge Projeleri')" class="text-xs font-bold text-blue-700 hover:underline">Proje Uygunluğunu Sorgula →</a>
+                    </div>
+                </div>
+
+                <!-- 1832 -->
+                <div id="card-tubitak-1832" class="program-card bg-white rounded-2xl overflow-hidden border border-emerald-300 shadow-sm hover:shadow-md transition flex flex-col" data-category="tubitak">
+                    <div class="h-32 bg-gradient-to-br from-emerald-950 via-teal-900 to-slate-900 relative p-4 flex items-start justify-between">
+                        <span class="px-3 py-1 rounded-md bg-slate-950/80 text-emerald-300 text-xs font-bold border border-emerald-400/30">TÜBİTAK 1832</span>
+                        <span class="text-xs font-mono text-emerald-300">Yeşil Dönüşüm</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-bold text-inomax-dark mb-2">Sanayide Yeşil Dönüşüm Çağrısı</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-1">Dünya Bankası finansmanlı Türkiye Yeşil Sanayi Projesi kapsamında yeşil teknoloji, enerji verimliliği ve emisyon azaltımı odaklı ticarileşme projeleri.</p>
+                        <a href="#degerlendirme" onclick="inquireProgram('1832 – Sanayide Yeşil Dönüşüm Çağrısı')" class="text-xs font-bold text-emerald-700 hover:underline">Proje Uygunluğunu Sorgula →</a>
+                    </div>
+                </div>
+
+                <!-- 1707 & 1602 -->
+                <div id="card-tubitak-1707" class="program-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col" data-category="tubitak">
+                    <div class="h-32 bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 relative p-4 flex items-start justify-between">
+                        <span class="px-3 py-1 rounded-md bg-slate-950/80 text-white text-xs font-bold border border-white/15">TÜBİTAK 1707 & 1602</span>
+                        <span class="text-xs font-mono text-blue-300">Sipariş Ar-Ge & Patent</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-bold text-inomax-dark mb-2">Siparişe Dayalı Ar-Ge & Patent Destekleri</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-1">Müşteri kuruluş garantili KOBİ Ar-Ge projeleri (1707) ile ulusal ve uluslararası patent tescil süreçlerinin (1602) mali olarak desteklenmesi.</p>
+                        <a href="#degerlendirme" onclick="inquireProgram('TÜBİTAK 1501 / 1507 Sanayi ve KOBİ Ar-Ge Destekleri')" class="text-xs font-bold text-blue-700 hover:underline">Proje Uygunluğunu Sorgula →</a>
+                    </div>
+                </div>
+
+                <!-- KOSGEB -->
+                <div id="card-kosgeb-destekleri" class="program-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col" data-category="kosgeb">
+                    <div class="h-32 bg-gradient-to-br from-slate-900 via-amber-950 to-slate-900 relative p-4 flex items-start justify-between">
+                        <span class="px-3 py-1 rounded-md bg-slate-950/80 text-amber-300 text-xs font-bold border border-amber-400/30">KOSGEB</span>
+                        <span class="text-xs font-mono text-amber-300">KOBİGEL & Yeşil Sanayi</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-bold text-inomax-dark mb-2">KOBİ Gelişim, Dijitalleşme ve Yeşil Sanayi</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-1">KOBİGEL, Stratejik Ürün, Ar-Ge Ür-Ge İnovasyon, Girişimcilik ve KOSGEB Yeşil Sanayi (Güneş enerjisi ve temiz üretim) projelerinin uçtan uca yönetimi.</p>
+                        <a href="#degerlendirme" onclick="inquireProgram('KOSGEB KOBİ Gelişim ve Yeşil Sanayi Destekleri')" class="text-xs font-bold text-amber-700 hover:underline">Proje Uygunluğunu Sorgula →</a>
+                    </div>
+                </div>
+
+                <!-- Kalkınma Ajansı -->
+                <div id="card-kalkinma-ajansi" class="program-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col" data-category="ajans">
+                    <div class="h-32 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 relative p-4 flex items-start justify-between">
+                        <span class="px-3 py-1 rounded-md bg-slate-950/80 text-purple-300 text-xs font-bold border border-purple-400/30">KALKINMA AJANSLARI</span>
+                        <span class="text-xs font-mono text-purple-300">%50 - %75 Hibe</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-bold text-inomax-dark mb-2">Kalkınma Ajansı Hibe ve Mali Destekleri</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-1">Bölgesel rekabetçiliği artırmaya, yatırım ortamını geliştirmeye ve üretim altyapısını modernize etmeye yönelik mali ve teknik destek programları.</p>
+                        <a href="#degerlendirme" onclick="inquireProgram('Kalkınma Ajansı Hibe ve Destekleri')" class="text-xs font-bold text-purple-700 hover:underline">Proje Uygunluğunu Sorgula →</a>
+                    </div>
+                </div>
+
+                <!-- Yatırım Teşvik -->
+                <div id="card-bakanlik-yatirim" class="program-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col" data-category="ajans">
+                    <div class="h-32 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 relative p-4 flex items-start justify-between">
+                        <span class="px-3 py-1 rounded-md bg-slate-950/80 text-purple-300 text-xs font-bold border border-purple-400/30">BAKANLIK DESTEKLERİ</span>
+                        <span class="text-xs font-mono text-purple-300">Vergi & KDV İstisnası</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-bold text-inomax-dark mb-2">Yatırım Teşvik Belgesi & İhracat Destekleri</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-1">Sanayi ve Teknoloji Bakanlığı Yatırım Teşvik Belgesi (KDV istisnası, gümrük muafiyeti, vergi indirimi) ve Ticaret Bakanlığı ihracat destekleri.</p>
+                        <a href="#degerlendirme" onclick="inquireProgram('Yatırım Teşvik Belgesi / Bakanlık Destekleri')" class="text-xs font-bold text-purple-700 hover:underline">Proje Uygunluğunu Sorgula →</a>
+                    </div>
+                </div>
+
+                <!-- Ar-Ge Merkezi -->
+                <div id="card-arge-merkezi" class="program-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col" data-category="ajans">
+                    <div class="h-32 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 relative p-4 flex items-start justify-between">
+                        <span class="px-3 py-1 rounded-md bg-slate-950/80 text-slate-200 text-xs font-bold border border-white/15">AR-GE MERKEZİ & EĞİTİM</span>
+                        <span class="text-xs font-mono text-slate-300">5746 Sayılı Kanun</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-bold text-inomax-dark mb-2">Ar-Ge / Tasarım Merkezi & Proje Eğitimleri</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-1">5746 sayılı kanun kapsamında Ar-Ge ve Tasarım Merkezi kurulumu, faaliyet raporlaması ve kurum içi proje döngüsü yönetimi eğitimleri.</p>
+                        <a href="#degerlendirme" onclick="inquireProgram('Henüz Karar Vermedim (Genel Uygunluk Analizi İstiyorum)')" class="text-xs font-bold text-slate-700 hover:underline">Proje Uygunluğunu Sorgula →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ÖN DEĞERLENDİRME & İLETİŞİM BÖLÜMÜ -->
+    <section id="degerlendirme" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12">
+            <div class="lg:col-span-5 space-y-6" id="iletisim">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-blue-700">Bize Ulaşın</span>
+                    <h2 class="text-3xl font-extrabold text-inomax-dark mt-1">Tıklayın ve İletişimde Kalalım</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed mt-3">
+                        Firmanızın mevcut yatırımlarını, Ar-Ge fikirlerini veya yeşil dönüşüm planlarını uzman mühendis ve danışman kadromuzla değerlendirelim. Size en uygun hibe ve teşvik yol haritasını ücretsiz çıkaralım.
+                    </p>
+                </div>
+
+                <!-- Söğütözü Merkez Ofis Görseli -->
+                <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-inomax-dark">
+                    <svg viewBox="0 0 600 220" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-44 object-cover">
+                        <rect width="600" height="220" fill="#0A1628" />
+                        <circle cx="480" cy="50" r="95" fill="#1D4ED8" fill-opacity="0.22" />
+                        <circle cx="120" cy="170" r="85" fill="#059669" fill-opacity="0.18" />
+                        <g transform="translate(35, 25)">
+                            <rect x="30" y="55" width="75" height="140" fill="#112240" stroke="#3B82F6" stroke-opacity="0.35" />
+                            <rect x="120" y="20" width="110" height="175" fill="#162E54" stroke="#60A5FA" stroke-opacity="0.55" stroke-width="1.5" />
+                            <rect x="245" y="45" width="90" height="150" fill="#0F2442" stroke="#34D399" stroke-opacity="0.4" />
+                            <g transform="translate(375, 42)">
+                                <rect x="0" y="0" width="165" height="92" rx="12" fill="#0F172A" stroke="#34D399" stroke-opacity="0.5" />
+                                <circle cx="28" cy="30" r="12" fill="#059669" fill-opacity="0.25" stroke="#34D399" stroke-width="1.5" />
+                                <circle cx="28" cy="30" r="4" fill="#34D399" />
+                                <text x="48" y="27" fill="#FFFFFF" font-size="11" font-weight="700" font-family="Plus Jakarta Sans, sans-serif">SÖĞÜTÖZÜ MERKEZ</text>
+                                <text x="48" y="42" fill="#94A3B8" font-size="10" font-family="Plus Jakarta Sans, sans-serif">Yenimahalle / ANKARA</text>
+                                <text x="16" y="72" fill="#34D399" font-size="10" font-weight="600" font-family="JetBrains Mono, monospace">Beştepe Mah. Nergiz Sok. 7/2</text>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                        <div class="w-10 h-10 rounded-lg bg-blue-600 text-white flex items-center justify-center shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <div>
+                            <div class="text-xs font-bold uppercase text-slate-400">Merkez Ofis Adresimiz</div>
+                            <div class="text-sm font-semibold text-inomax-dark mt-0.5">
+                                Beştepe Mah. Nergiz Sokak No: 7/2 İç Kapı: 32 <br>Söğütözü, 06560 Yenimahalle / ANKARA
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-600 text-white flex items-center justify-center shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        </div>
+                        <div>
+                            <div class="text-xs font-bold uppercase text-slate-400">Telefon & WhatsApp Hattı</div>
+                            <a href="tel:+905546597684" class="text-sm font-semibold text-inomax-dark hover:text-blue-700 block mt-0.5">0554 659 76 84</a>
+                            <a href="tel:+903122191814" class="text-xs text-slate-500 block">(0312) 219 18 14</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                        <div class="w-10 h-10 rounded-lg bg-inomax-dark text-white flex items-center justify-center shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </div>
+                        <div>
+                            <div class="text-xs font-bold uppercase text-slate-400">Kurumsal E-Posta</div>
+                            <a href="mailto:info@inomaxdanismanlik.com" class="text-sm font-semibold text-inomax-dark hover:text-blue-700 block mt-0.5">info@inomaxdanismanlik.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hibe/Teşvik Ön Analiz Formu -->
+            <div class="lg:col-span-7">
+                <form onsubmit="handleFormSubmit(event)" class="bg-slate-50 p-8 rounded-2xl border border-slate-200 shadow-sm space-y-5">
+                    <h3 class="text-xl font-bold text-inomax-dark">Ücretsiz Hibe & Teşvik Uygunluk Formu</h3>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1.5">Adınız Soyadınız *</label>
+                            <input type="text" required placeholder="Örn: Ahmet Yılmaz" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-blue-600 bg-white">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1.5">Firma Unvanı *</label>
+                            <input type="text" required placeholder="Firma Adı A.Ş. / Ltd. Şti." class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-blue-600 bg-white">
+                        </div>
+                    </div>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1.5">Telefon Numaranız *</label>
+                            <input type="tel" required placeholder="05XX XXX XX XX" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-blue-600 bg-white">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1.5">E-Posta Adresiniz *</label>
+                            <input type="email" required placeholder="ornek@firma.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-blue-600 bg-white">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1.5">İlgilendiğiniz Destek Programı</label>
+                        <select id="program-select" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-blue-600 bg-white">
+                            <option value="1832 – Sanayide Yeşil Dönüşüm Çağrısı">1832 – Sanayide Yeşil Dönüşüm Çağrısı</option>
+                            <option value="TÜBİTAK 1501 / 1507 Sanayi ve KOBİ Ar-Ge Destekleri">TÜBİTAK 1501 / 1507 Sanayi ve KOBİ Ar-Ge Destekleri</option>
+                            <option value="TÜBİTAK 1509 Uluslararası Ar-Ge Projeleri">TÜBİTAK 1509 Uluslararası Ar-Ge Projeleri</option>
+                            <option value="KOSGEB KOBİ Gelişim ve Yeşil Sanayi Destekleri">KOSGEB KOBİ Gelişim ve Yeşil Sanayi Destekleri</option>
+                            <option value="Kalkınma Ajansı Hibe ve Destekleri">Kalkınma Ajansı Hibe ve Destekleri</option>
+                            <option value="Yatırım Teşvik Belgesi / Bakanlık Destekleri">Yatırım Teşvik Belgesi / Bakanlık Destekleri</option>
+                            <option value="Henüz Karar Vermedim (Genel Uygunluk Analizi İstiyorum)">Henüz Karar Vermedim (Genel Uygunluk Analizi İstiyorum)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1.5">Proje veya Yatırım Konunuz</label>
+                        <textarea rows="4" placeholder="Planladığınız yatırım, ürün geliştirme veya Ar-Ge çalışmasından kısaca bahsedin..." class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-blue-600 bg-white"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 rounded-xl bg-inomax-dark hover:bg-blue-800 text-white font-bold text-sm transition shadow-md cursor-pointer">
+                        Ön Değerlendirme Talebini Gönder
+                    </button>
+                    <p id="form-feedback" class="hidden text-center text-xs font-semibold text-emerald-700 bg-emerald-50 p-3.5 rounded-xl border border-emerald-200">
+                        Talebiniz alındı! Uzman danışmanlarımız en kısa sürede sizinle iletişime geçecektir.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-inomax-dark text-slate-400 py-12 border-t border-slate-800 text-sm mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                <p class="font-bold text-white">İNOMAX ARGE Danışmanlık ve Mühendislik Hizmetleri A.Ş.</p>
+                <p class="text-xs text-slate-400 mt-1">Optimum fayda, maksimum inovasyon, güvenilir danışmanlık.</p>
+            </div>
+            <div class="text-xs text-slate-500">
+                © 2012 - 2026 İnomax Danışmanlık. Tüm hakları saklıdır.
+            </div>
+        </div>
+    </footer>
+
+    <!-- İNTERAKTİF AÇILIR MENÜ, FİLTRE VE FORM SCRİPTİ -->
+    <script>
+        const dropdownWrapper = document.getElementById('services-dropdown-wrapper');
+        const dropdownBtn = document.getElementById('services-dropdown-btn');
+        const dropdownPanel = document.getElementById('services-dropdown-panel');
+        const dropdownIcon = document.getElementById('services-dropdown-icon');
+        let dropdownTimer = null;
+
+        function openDropdown() {
+            clearTimeout(dropdownTimer);
+            dropdownPanel.classList.remove('hidden');
+            dropdownIcon.classList.add('rotate-180', 'text-blue-700');
+        }
+
+        function closeDropdown() {
+            dropdownTimer = setTimeout(() => {
+                dropdownPanel.classList.add('hidden');
+                dropdownIcon.classList.remove('rotate-180', 'text-blue-700');
+            }, 160);
+        }
+
+        dropdownWrapper.addEventListener('mouseenter', openDropdown);
+        dropdownWrapper.addEventListener('mouseleave', closeDropdown);
+        dropdownBtn.addEventListener('click', () => {
+            if (dropdownPanel.classList.contains('hidden')) {
+                openDropdown();
+            } else {
+                dropdownPanel.classList.add('hidden');
+                dropdownIcon.classList.remove('rotate-180', 'text-blue-700');
+            }
+        });
+
+        function filterPrograms(category, btnEl) {
+            const cards = document.querySelectorAll('.program-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-inomax-dark', 'text-white');
+                btn.classList.add('bg-white', 'text-slate-700');
+                if (!btnEl && btn.dataset.filter === category) {
+                    btn.classList.remove('bg-white', 'text-slate-700');
+                    btn.classList.add('bg-inomax-dark', 'text-white');
+                }
+            });
+
+            if (btnEl) {
+                btnEl.classList.remove('bg-white', 'text-slate-700');
+                btnEl.classList.add('bg-inomax-dark', 'text-white');
+            }
+
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function selectCategoryFromMenu(category) {
+            filterPrograms(category, null);
+            dropdownPanel.classList.add('hidden');
+            document.getElementById('hizmetlerimiz').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function selectProgramFromMenu(cardIdSuffix) {
+            filterPrograms('all', null);
+            dropdownPanel.classList.add('hidden');
+            const targetCard = document.getElementById('card-' + cardIdSuffix);
+            if (targetCard) {
+                targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                targetCard.classList.add('ring-2', 'ring-blue-600');
+                setTimeout(() => targetCard.classList.remove('ring-2', 'ring-blue-600'), 2800);
+            }
+        }
+
+        function inquireProgram(optionValue) {
+            const selectEl = document.getElementById('program-select');
+            if (selectEl) {
+                selectEl.value = optionValue;
+            }
+            dropdownPanel.classList.add('hidden');
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const feedback = document.getElementById('form-feedback');
+            feedback.classList.remove('hidden');
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>
